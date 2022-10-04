@@ -1,0 +1,40 @@
+.border {
+  border: 2px solid firebrick;
+}
+
+.padding {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  margin: 20px;
+  width: 300px;
+
+  display: inline-block;
+  background-color: red;
+}
+.bold {
+  font-weight: bold;
+}
+
+span#sp.border {
+  background-color: darkkhaki;
+}
+
+.padding {
+  background-color: blueviolet;
+}
+
+.border .bold {
+  color: red;
+}
+
+.border .bold + p {
+  color: rgb(2, 255, 2);
+}
+
+.border.padding {
+  color: coral;
+  font-size: 2rem;
+}

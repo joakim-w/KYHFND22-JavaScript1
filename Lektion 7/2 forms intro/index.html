@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulär</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- <form action="submitted.html" method="post"> -->
+<!-- 
+  GET - Skickar datan i URL, Använd INTE för att skicka känslig infpomation tex lösenord
+
+  POST - lägger in datan i ett paket (body) så det inte syns i URL
+-->
+
+    <!-- <input type="text" name="username">
+    <input type="password" name="password">
+    <button>skicka</button>
+  </form> -->
+
+<div class="wrapper">
+
+  <div class="card">
+    <form>
+
+      <div class="input-group">
+        <label for="firstName" class="label">First Name</label>
+        <input type="text" id="firstName" class="w-100" placeholder="firstname">
+      </div>
+
+      <div class="input-group">
+        <label for="lastName" class="label">Last Name</label>
+        <input type="text" id="lastName" class="w-100" placeholder="lastName">
+      </div>
+
+      <button>submit</button>
+      <!-- <input type="submit" value="SUBMIT"> -->
+      <!-- <br>
+
+      <button type="reset">Reset</button>
+      <button type="button">En vanlig knapp</button> -->
+    </form>
+  </div>
+
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
