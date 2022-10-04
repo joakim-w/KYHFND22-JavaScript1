@@ -42,10 +42,11 @@ const button = document.querySelector('#knapp')
 
 const clickHandler = () => {}
 
-button.addEventListener('click', () => {
+button.addEventListener('click', (e) => {
   console.log('click')
   q5.innerText = 'DU CLICKADE PÅ KNAPPEN'
   document.body.style = 'background-color: hotpink;'
+  console.log(e)
 })
 
 button.addEventListener('mouseover', () => {
@@ -57,15 +58,3 @@ button.addEventListener('mouseover', () => {
 
 // button.addEventListener('click', clickHandler)
 // button.removeEventListener('click', clickHandler)
-
-
-
-const greet = 'hej'
-
-
-
-console.log(greet);
-console.log(greet);
-
-console.log('hej');
-console.log('hej');
