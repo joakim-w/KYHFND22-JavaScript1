@@ -64,9 +64,16 @@ body * {
 .is-invalid {
   outline: 1px solid #be1b1b;
 }
+input[type="checkbox"].is-invalid, 
+input[type="checkbox"].is-valid {
+  outline: none;
+}
 .is-invalid ~ .invalid-feedback {
   display: block;
 }
+/* .is-invalid + .invalid-feedback {
+  display: block;
+} */
 
 .btn {
   border: 0;
