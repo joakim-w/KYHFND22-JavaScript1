@@ -2,6 +2,7 @@ const form = document.querySelector('#loginForm');
 
 
 const validateEmail = (input) => {
+  console.log('4', input)
   const regEx = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,6}$/
 
   if(!regEx.test(input.value)) {
@@ -24,13 +25,14 @@ const validatePassword = (input) => {
 
 const submitHandler = function(e) {
   e.preventDefault();
+  //console.log('1')
 
   const errors = []
   let i = 0;
   for(input of e.target) {
-    
     switch(input.type) {
         case 'email': 
+        //console.log('2')
           errors[i] = validateEmail(input)
           break;
         case 'password': 
